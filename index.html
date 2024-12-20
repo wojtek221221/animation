@@ -6,42 +6,126 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="w-screen h-screen flex items-center justify-center bg-[#100808]">
-    <div class="flex h-[500px] w-[800px] space-x-4 p-8">
-        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
-            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
-                <img
-                    src="server1.jpg"
-                    draggable="false"
-                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
-                />
-                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
-            </div>
-        </div>
-        
-
-        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
-            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
-                <img
-                    src="server2.jpg"
-                    draggable="false"
-                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
-                />
-                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
-            </div>
-        </div>
-        
-
-        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
-            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
-                <img
-                    src="server3.jpg"
-                    draggable="false"
-                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
-                />
-                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
-            </div>
-        </div>
-        
+<div id="tryby" class="flex-col items-center justify-center mt-[-250px] md:mt-0">
+    <div class="text-center mb-4">
+        <h1 class="text-[64px] font-bold text-white mb-2">Tryby</h1>
+        <p class="text-[20px] text-[#A34747]">Na tych trybach u nas zagrasz</p>
     </div>
+
+    <div class="flex h-[762px] w-full max-w-[1500px] mx-auto space-x-4 p-8 relative hidden md:flex">
+        <div class="absolute inset-0 flex justify-center items-center">
+            <div class="w-[900px] h-[410px] bg-gradient-to-b from-[#4E0000] to-[#291800] rounded-full blur-[280px]"></div>
+        </div>        
+
+        <!-- tryb 1 -->
+        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server1.jpg"
+                    draggable="false"
+                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold duration-300 transform transition-all group-hover:text-5xl">
+                        Tryb 1
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+
+        <!-- tryb 2 -->
+        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server2.jpg"
+                    draggable="false"
+                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold duration-300 transform transition-all group-hover:text-5xl">
+                        Tryb 2
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+
+        <!-- tryb 3 -->
+        <div class="group relative flex-1 transition-all duration-1000 hover:flex-[2] cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative h-full w-full rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server3.jpg"
+                    draggable="false"
+                    class="h-full w-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold duration-300 transform transition-all group-hover:text-5xl">
+                        Tryb 3
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile-->
+    <div class="flex h-[762px] w-full flex-col space-y-4 p-8 relative md:hidden">
+        <div class="absolute inset-0 flex justify-center items-center">
+            <div class="w-[900px] h-[410px] bg-gradient-to-b from-[#4E0000] to-[#291800] rounded-full blur-[280px]"></div>
+        </div>
+
+        <!-- tryb 1 -->
+        <div class="group relative cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative w-[420px] rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server1.jpg"
+                    draggable="false"
+                    class="w-[420px] object-cover"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold">
+                        Tryb 1
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+
+        <!-- tryb 2 -->
+        <div class="group relative cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative w-[420px] rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server2.jpg"
+                    draggable="false"
+                    class="w-[420px] object-cover"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold">
+                        Tryb 2
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+
+        <!-- tryb 3 -->
+        <div class="group relative cursor-pointer rounded-[16px] shadow-sm">
+            <div class="relative w-[420px] rounded-[16px] overflow-hidden">
+                <img
+                    src="./assets/tryby/server3.jpg"
+                    draggable="false"
+                    class="w-[420px] object-cover"
+                />
+                <div class="absolute inset-0 flex items-end mb-5 justify-center">
+                    <h1 class="text-white text-4xl font-bold">
+                        Tryb 3
+                    </h1>
+                </div>
+                <div class="absolute inset-0 rounded-[16px] pointer-events-none border-[1px] border-[#FF0000]"></div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
